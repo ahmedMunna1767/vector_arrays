@@ -150,7 +150,9 @@ void VecArrayInsertFirst(VecArray *vecPtr, int value)
 
 int VecArrayPop(VecArray *vecPtr)
 {
-    VecArrayDeleteIndex(vecPtr,vecPtr->size - 1);
+    int lastElem = *(vecPtr->data + vecPtr->size);
+    vecPtr->size = vecPtr->size -1; 
+    return lastElem;     
 }
 
 void VecArrayDeleteIndex(VecArray *vecPtr, int index)

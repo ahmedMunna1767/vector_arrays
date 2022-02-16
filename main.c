@@ -23,7 +23,7 @@ int main(){
     {
         VecArrayPush(vecArrayPtr, i*5); 
     }
-    printf("Get Val at 0, 2, 4, 6 indices-->>"); 
+    printf("Get index values at 0, 2, 4, 6 -->>"); 
     printf("%d, %d, %d, %d\n", getValAt(vecArrayPtr, 0), getValAt(vecArrayPtr, 2), getValAt(vecArrayPtr, 4), getValAt(vecArrayPtr, 6));
     printf("25 at index: %d\n", VecArrayFindVal(vecArrayPtr, 25)); 
     printf("35 at index: %d\n", VecArrayFindVal(vecArrayPtr, 35)); 
